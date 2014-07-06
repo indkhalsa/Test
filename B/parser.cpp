@@ -29,6 +29,7 @@ int main ()
 						if(current_line[i] == ' ' && current_line[i] == current_line[o])//checking two spaces together
 						{
 							current_line.erase(current_line.begin() + i);//removing one space if two spaces together
+							i--;
 						}
 					}
                     outfile<<current_line;// writing data into output file line by line

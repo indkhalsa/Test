@@ -23,6 +23,7 @@ int main ()
 				if(current_line[i] == ' ' && current_line[i] == current_line[o])
 				{
 					current_line.erase(current_line.begin() + i);
+					i--;
 				}
 			}
             outfile<<current_line;
